@@ -4,7 +4,14 @@ import org.w3c.dom.ls.LSOutput;
 public class Main {
     public static void main(String[] args) {
 
-        //Task1
+//        task1();
+//        task2();
+//        task3();
+        task4();
+    }
+
+    //Task1
+    public static void task1(){
         Person person = new Person("Иванов Иван Иванович",
                 "15.11.2000",
                 "322-223-322",
@@ -12,8 +19,10 @@ public class Main {
                 "Russia",
                 "Mira 23 - 11");
         System.out.println(person);
+    }
 
-        //Task2
+    //Task2
+    public static void task2(){
         City city = new City("Kaliningrad",
                 "Kaliningrad reg",
                 "Russia",
@@ -21,8 +30,10 @@ public class Main {
                 236000,
                 4012);
         System.out.println(city);
+    }
 
-        //Task3
+    //Task3
+    public static void task3(){
         Country country = new Country("Russia",
                 "Eurasia",
                 180_000_000L,
@@ -31,8 +42,11 @@ public class Main {
                 new String[]{"Moscow", "Kaliningrad", "Samara", "Novgorod", "Krasnodar"});
 
         System.out.println(country);
+    }
 
-        //Task4
+
+    //Task4
+    public static void task4(){
         Fraction fraction1 = new Fraction(10, 2, Operation.add);
         System.out.println(fraction1);
         Fraction fraction2 = new Fraction(10, 2, Operation.subtract);
@@ -42,5 +56,7 @@ public class Main {
         Fraction fraction4 = new Fraction(10, 2, Operation.division);
         System.out.println(fraction4);
     }
+
+
 
 }
